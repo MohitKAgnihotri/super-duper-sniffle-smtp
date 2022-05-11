@@ -8,16 +8,16 @@
 
 #define	STKSIZE	 16536
 class Thread{
-	public:
+ public:
 
-		Thread()
-		{}
-		virtual ~Thread()
-		{}
+  Thread()
+  {}
+  virtual ~Thread()
+  {}
 
-		static void * pthread_callback (void * ptrThis);
+  static void * pthread_callback (void * ptrThis);
 
-		virtual void run () =0 ;
-		void  start();
+  virtual void run () =0 ;
+  void  start();
 };
 #endif
